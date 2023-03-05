@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="./mycss.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+		<header>
+			<div class="header-logo">
+				<div class="include-slogan">
+					<img src="./pictures/logo-taskio-0e358e6b5592e0b71eba2806bf4d4eb53a101a0047b739a9054d0f63e982513c 1.png" alt="" class="header-image">
+					<div class="slogan-header">
+					<p class="slogan">Let's get shit done!</p>
+					<img src="./pictures/peace 1.png" alt="">
+					</div>
+				</div>
+				<button id = "open-add" class="add">+ New task</button>
+			</div>
+		</header>
+		<div class="container-all-task">
+			<div class="container-todo">
+				<div class="todo-header">
+					<span>Todo</span>
+					<div class="todo-count">
+						<p id="todo-count-number">0</p>
+					</div>
+				</div>
+
+					<div class="todo-line"></div>
+					<div class="body" id="todo-list">
+						<div class="todo-task">
+							<div class="task-header">
+								<span class="category">marketing</span>
+								<div class="action">
+									<img src="./pictures/Edit.png" alt="" class="edit">
+									<img src="./pictures/Delete.png" alt="" class="delete" >
+								</div>
+							</div>
+								<div class="task-body">
+									<p class="task-title">Lorem ipsum dolor sit amet.</p>
+									<div class="task-line"></div>
+									<p class="task-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, aliquam rerum placeat perspiciatis iure tempora provident tempore iusto temporibus non eveniet debitis quae sunt accusantium libero consectetur mollitia exercitationem repellat.</p>
+									<div class="task-time">
+										<img src="./pictures/Vector.png" alt="" class="clock">
+										<p class="time">00:00</p>
+									</div>
+								</div>
+						</div>
+					</div>
+			</div>
+			<div class="container-todo">
+				<div class="todo-header doing">
+					<span>Doing</span>
+					<div class="todo-count">
+						<p id="doing-count-number">0</p>
+					</div>
+				</div>
+
+					<div class="todo-line doing-line"></div>
+					<div class="body" id="doing-list">
+						<div class="todo-task">
+							<div class="task-header">
+								<span class="category">marketing</span>
+								<div class="action">
+									<img src="./pictures/Edit.png" alt="" class="edit">
+									<img src="./pictures/Delete.png" alt="" class="delete">
+								</div>
+							</div>
+								<div class="task-body">
+									<p class="task-title">Lorem ipsum dolor sit amet.</p>
+									<div class="task-line"></div>
+									<p class="task-content">Lorem ipsum dolor sit amet.</p>
+									<div class="task-time">
+										<img src="./pictures/Vector.png" alt="" class="clock">
+										<p class="time">00:00</p>
+									</div>
+								</div>
+						</div>
+					</div>
+			</div>
+			<div class="container-todo">
+				<div class="todo-header finish">
+					<span>Finish</span>
+					<div class="todo-count">
+						<p id="finish-count-number">0</p>
+					</div>
+				</div>
+
+					<div class="todo-line finish-line"></div>
+					<div class="body" id="finish-list">
+						<div class="todo-task">
+							<div class="task-header">
+								<span class="category">marketing</span>
+								<div class="action">
+									<img src="./pictures/Edit.png" alt="" class="edit">
+									<img src="./pictures/Delete.png" alt="" class="delete">
+								</div>
+							</div>
+								<div class="task-body">
+									<p class="task-title">Lorem ipsum dolor sit amet.</p>
+									<div class="task-line"></div>
+									<p class="task-content">Lorem ipsum dolor sit amet.</p>
+									<div class="task-time">
+										<img src="./pictures/Vector.png" alt="" class="clock">
+										<p class="time">00:00</p>
+									</div>
+								</div>
+						</div>
+					</div>
+			</div>
+		</div>
+		<div class="pop-up-add disable", id = "open-input">
+			<div class="background-pop-up"></div>
+			<div class="pop-up-container">
+				<div class="pop-up-table">
+					<p class="pop-up-title">Add new todo</p>
+					<input placeholder="Category" type="text" id="add-category" class="input" required>
+					<input placeholder="Title" type="text" id="add-title" class="input" required>
+					<input placeholder="Content" type="text" id="add-content" class="input height3x" required>
+					<button id="add-button" class = "add-button" type = "submit">submit</button>
+					<span class="closeForm" id="close-pop-up">x</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="pop-up-add disable", id = "open-edit">
+			<div class="background-pop-up"></div>
+			<div class="pop-up-container">
+				<div class="pop-up-table">
+					<p class="pop-up-title">Add new todo</p>
+					<input placeholder="Category" type="text" id="edit-category" class="input" required>
+					<input placeholder="Title" type="text" id="edit-title" class="input" required>
+					<input placeholder="Content" type="text" id="edit-content" class="input height3x" required>
+					<div class="groupBox">
+						<div class="checkbox"><input type="radio" value="todo" class="choosetype" onchange="option(0)"> <label for="todo">To do</label></div>
+						<div class="checkbox"><input type="radio" value="doing"  class="choosetype" onchange="option(1)"><label for="doing">Doing</label></div>
+						<div class="checkbox"><input type="radio" value="done"  class="choosetype" onchange="option(2)"><label for="done">Done</label></div>
+					</div>
+					<button id="edit-button" class = "add-button" type = "submit">submit</button>
+					<span class="closeForm" id="close-pop-up-edit">x</span>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<script src= "main.js"></script>
+</body>
+</html>
